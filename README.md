@@ -1,19 +1,30 @@
 # Mastering Git
-## Git Directory
-- Git has an internal database that it keeps in the `.git` folder
-## The Three States Of A File
-https://git-scm.com/book/en/v2/Getting-Started-Git-Basics
 
-## The Four Core Repositories
-- The Working Directory (you can use `checkout` to change the working directory)
-- The Staged Snapshot (create a 'snapshot' of your project at any given time)
-- Committed Snapshots (saves the snapshot to the git database and officially make it part of the project history)
-- Development Branches
+## Discussion
 
-## Branching
+Read: [Branches Part 1 (Ry's Git Guide)](http://rypress.com/tutorials/git/branches-1)
 
-## Rebasing
+- What is the 'working directory' (in context of git)?
+- What is the difference between a staged and committed snapshot?
+- What are git 'development branches?'
+- What is the HEAD?
+- How do you create and merge a branch?
+- How many different branches do you need?
+
+## Branching Demo
+- Creating a branch (`git checkout -b <branch-name`)
+- Merging a branch  (`git merge <branch-name>`)
+
+## Github Best Practices
+- Commit often - think of commits as 'checkpoints' in old video games
+- Write clear commit messages, and keep them consistent
+- Always keep master completely clean, stable, and functional (aka 'production ready')
+- Create a 'development' branch that serves as your main branch during developement
+- Create new 'feature' branches for new features
+- Merge feature branches into development branch and test before merging to master
+- Merge development branch into master (never merge a feature branch directly to master)
+- Always create Pull Requests (aka PRs) instead of just pushing straight to github
+- Never merge your own PRs
+- Only pull to master branch (?)
 
 ## Github Issues From The Command Line
-
-## Bash Shortcuts
